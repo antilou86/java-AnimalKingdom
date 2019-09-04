@@ -32,7 +32,7 @@ public abstract class Animals {
 
         //create abstract methods
     public abstract String getName();
-    public abstract String getYearDiscovered();
+    public abstract int getYearDiscovered();
     public abstract String moves();
     public abstract String breathes();
     public abstract String reproduces();
