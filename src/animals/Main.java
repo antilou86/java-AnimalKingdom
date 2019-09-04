@@ -4,6 +4,16 @@ import java.util.*;
 
 //create main class
 public class main {
+
+    //runs animals array through Checker interface. if Checker returns True, it prints the animal
+    public static void printAnimals(ArrayList <Animals> animals, Checker tester) {
+        for (animals a : animals) {
+            if (tester.test(a)) {
+                System.out.println(a.getName());
+            }
+        }
+    }
+
     public static void main(String[] args){
         //make an ArrayList of all animals
         ArrayList<Animals> zootopia = new ArrayList<Animals>();
@@ -55,5 +65,7 @@ public class main {
         zootopia.forEach(animal -> System.out.println(animal.getName()+" will "+animal.moves()+" to move."));
         System.out.println();
         System.out.println();
+
+        
     }
 }
