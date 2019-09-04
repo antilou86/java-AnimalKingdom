@@ -37,7 +37,7 @@ public abstract class Animals {
     public abstract String breathes();
     public abstract String reproduces();
 
-        //and an override just in case.
+        //and an override on toString just in case.
     @Override
     public String toString() {
         return "Animals{" +
