@@ -8,7 +8,7 @@ public class Birds extends Animals {
         super(name, yearDiscovered);
 
     }
-    ///overrides for inherited methods.
+    //overrides for future inherited methods.
     @Override
     public String move() {
         return "fly";
