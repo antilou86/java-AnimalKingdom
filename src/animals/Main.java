@@ -3,11 +3,11 @@ package animals;
 import java.util.*;
 
 //create main class
-public class main {
+public class Main {
 
     //runs animals array through Checker interface. if Checker returns True, it prints the animal
     public static void printAnimals(ArrayList <Animals> animals, Checker tester) {
-        for (animals a : animals) {
+        for (Animals a : animals) {
             if (tester.test(a)) {
                 System.out.println(a.getName());
             }
@@ -45,20 +45,20 @@ public class main {
             //sorts by year, top to bottom.
         zootopia.sort((animal1, animal2) -> animal2.getYearDiscovered() - animal1.getYearDiscovered());
             //prints a line for each animal in the sorted list
-        zooTopia.forEach(animal -> System.out.println("name: "+animal.getName()+" year discovered: "+animal.getYearDiscovered()));
+        zootopia.forEach(animal -> System.out.println("name: "+animal.getName()+" year discovered: "+animal.getYearDiscovered()));
         System.out.println();//makes a new line
         System.out.println();
 
         //sortin' em by the ABCs
         System.out.println("All the aminals by name, sorted alphabetically: ");
         zootopia.sort((animal1, animal2) -> animal1.getName().compareToIgnoreCase(animal2.getName()));
-        zooTopia.forEach(animal -> System.out.println("name: "+animal.getName()));
+        zootopia.forEach(animal -> System.out.println("name: "+animal.getName()));
         System.out.println();
         System.out.println();
 
         //Sortin by movement
         System.out.println("All animals sorted by how they move: ");
-        zootopia.sort((animal1, animal2) -> animal1.getMoves().compareToIgnoreCase(animal2.getMoves()));
+        zootopia.sort((animal1, animal2) -> animal1.moves().compareToIgnoreCase(animal2.moves()));
         zootopia.forEach(animal -> System.out.println(animal.getName()+" will "+animal.moves()+" to move."));
         System.out.println();
         System.out.println();

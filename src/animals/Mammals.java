@@ -10,15 +10,15 @@ public class Mammals extends Animals {
     }
     //overrides for future inherited methods.
     @Override
-    public String move() {
+    public String moves() {
         return "walk";
     }
     @Override
-    public String breathe() {
+    public String breathes() {
         return "lungs";
     }
     @Override
-    public String reproduce() {
+    public String reproduces() {
         return "live births";
     }
     @Override
